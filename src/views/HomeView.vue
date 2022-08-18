@@ -47,7 +47,7 @@
       <div class="col-12 text-center mt-5">
                <video  height="500" ref="videoPlayer">
           <source
-            src="../assets/video/test_1_1.mp4"
+            src="../assets/video/video_tfe.mp4"
             type="video/mp4"
           />
         </video>
