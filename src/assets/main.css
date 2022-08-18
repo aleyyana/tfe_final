@@ -1,0 +1,9 @@
+@import '../assets/css/base.css';
+
+
+*{
+  background-color: var(--black-bacgkround);
+}
+
+
+
