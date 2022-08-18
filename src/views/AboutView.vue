@@ -18,7 +18,7 @@
                 </p>
             </div>
             <div class="col">
-                <img src="../assets/img/logo_1.png" alt="">
+                <img src="../assets/img/logo_2.png" alt="">
                 
             </div>
             <div class="col">
