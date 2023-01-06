@@ -33,7 +33,7 @@ import axios from 'axios'
 
 const URL = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today';
 export default {
-  name: "FirstComponent",
+  name: "Aqua",
   data() {
     return {
       message: "Your daily Aquarius",
@@ -44,11 +44,19 @@ export default {
         axios.post(URL).then((response) => {
             this.data = response.data
         })
-    }
+    },
+
+    props: {
+    msg: String,
+  },
 };
 </script>
 
 <style>
+button{
+    color: white;
+}
+    
 li{
   list-style-type: none;
   font-family: Quasimoda, sans-serif;

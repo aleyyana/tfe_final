@@ -7,21 +7,23 @@ import 'animate.css';
 
 <template>
 
-<div class="wrapper container-fluid">
-  <nav class="navbar">
-        <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
-        <ul class="navbar-nav menu-links">
-          <li class="nav-item">
-            <RouterLink  to="/">Home</RouterLink>
-          </li>
-          <li class="nav-item menu-links">
-            <RouterLink to="/about">About</RouterLink>
-          </li>
-          <li class="nav-item menu-links">
-            <RouterLink to ="/horoscope">Horoscopes</RouterLink>
-          </li>
+<div class="container-fluid">
+  <nav class="nav navbar navbar-expand-lg center">
+    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item menu-links ">
+          <RouterLink  to="/">Home</RouterLink>
+        </li>
+        <li class="nav-item menu-links ">
+          <RouterLink to="/about">About</RouterLink>
+        </li>
+        <li class="nav-item menu-links ">
+          <RouterLink to ="/horoscope">Horoscopes</RouterLink>
+        </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 </div>
 <hr>
   <RouterView />
@@ -75,7 +77,6 @@ nav {
   font-size: 16px;
   text-align: center;
   margin-top: 2rem;
-  font-family: Lust-sans;
   display: flex;
     flex-flow: row  wrap;
 }

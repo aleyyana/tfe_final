@@ -15,6 +15,7 @@
                   <img src="../assets/img/aquarius.png">
                 <br/>
                   <button class="secondary px-4 py-2 m-1"  @click="toggleAquarius">Your daily astro !</button>
+
                 </div>
                 <div class="col text-center mb-3">
                   <h6 class="">Pisces</h6>
@@ -100,64 +101,64 @@
       </div>
       <div class="col-12">
          <aquarius-sign
-            v-if="showAquarius"
+            v-show="showAquarius"
         />
       </div>
       <div class="col-12">
          <pisces-sign 
-            v-if="showPisces"
+            v-show="showPisces"
         />
       </div>
       <div class="col-12">
         <aries-sign
-            v-if="showAries"
+            v-show="showAries"
         />
       </div>
       <div class="col-12">
         <taurus-sign 
-            v-if="showTaurus"
+            v-show="showTaurus"
         />
 
       </div>
       <div class="col-12">
         <gemini-sign
-            v-if="showGemini"
+            v-show="showGemini"
         />
       </div>
       <div class="col-12">
         <cancer-sign
-          v-if="showCancer"
+          v-show="showCancer"
         />
 
       </div>
       <div class="col-12">
          <leo-sign
-          v-if="showLeo"
+          v-show="showLeo"
         />
       </div>
       <div class="col-12">
         <virgo-sign
-          v-if="showVirgo"
+          v-show="showVirgo"
         />
       </div>
       <div class="col-12">
          <libra-sign
-          v-if="showLibra"
+          v-show="showLibra"
         />
       </div>
       <div class="col-12">
          <scorpio-sign
-          v-if="showScorpio"
+          v-show="showScorpio"
         />
       </div>
       <div class="col-12">
          <sagittarius-sign
-          v-if="showSagittarius"
+          v-show="showSagittarius"
         />
       </div>
       <div class="col-12">
          <capricorn-sign
-          v-if="showCapricorn"
+          v-show="showCapricorn"
         />
       </div>
   </div>
@@ -268,6 +269,7 @@ export default {
 
   h6{
     font-style: italic;
+    color: var(--secondary-color)
     
   }
 

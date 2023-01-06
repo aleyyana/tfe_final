@@ -77,7 +77,9 @@ h3, .quote {
   text-align: right;
   font-weight: 100;
   color: var(--secondary-color);
+  font-family: Quasimoda,sans-serif;
 }
+
 
 h4{
     font-size: 40px;
