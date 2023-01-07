@@ -44,20 +44,27 @@
                 <div class="row">
                     <div class="col-12">
                         <h2>Contact us</h2>
-                        <form action="" method="post">
+                        <form 
+                        @submit="checkForm"
+                        action="" 
+                        method="post" 
+                        novalidate=""
+
+                        >
                             <div class="form-group">
                                 <label for="name">Name :</label>
-                                <input class="form-control" type="text" id="name" name="user_name">
+                                <input class="form-control" type="text" id="username" name="username" v-model="username">
                             </div>
                             <div class="form-group">
                                 <label for="mail">E-mail :</label>
-                                <input class="form-control" type="email" id="mail" name="user_mail">
+                                <input class="form-control" type="email" id="mail" name="email" v-model="email">
                             </div>
                             <div class="form-group">
                                 <label for="msg">Message :</label>
-                                <textarea id="msg" name="user_message" class="form-control"></textarea>
+                                <textarea id="msg" name="user_message" class="form-control" v-model="message"></textarea>
                             </div>
-                            <button class="btn primary mt-3" type="submit">Send a Message</button>
+                            <input  class="btn primary mt-3" type="submit" value="Send">
+                            <!-- <button class="btn primary mt-3" type="submit">Send a Message</button> -->
                         </form>
 
                     </div>
@@ -78,6 +85,33 @@
     </div>
 
 </template>
+
+<script>
+
+    export default{
+        name: "About",
+        data (){
+            return{
+                errors: [],
+                username : null,
+                email : null,
+                message : null
+
+            }
+        
+            
+        }, 
+        methods:{
+            checkForm:function(e) {
+            if(this.username && this.email && this.message) return true;
+            this.errors = [];
+            if(!this.username) this.errors.push("Name required.");
+            if(!this.email) this.errors.push("Mail required.");
+            e.preventDefault();
+    }
+  }
+    };
+</script>
 
 <style scoped>
 

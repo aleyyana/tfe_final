@@ -32,7 +32,7 @@
           A small portion of the world let astrology guide their life. Maybe in a bad way or maybe in a good way. But, 
           it can be so fun to read about our daily horoscope and have some fun planning the day following what the stars said.
         </p>
-
+        
          <RouterLink  to="/about">
           <button class="primary btn px-4 py-2">Learn more</button> 
         </RouterLink>
